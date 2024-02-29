@@ -18,6 +18,11 @@ Lethal Company is a popular strategy game among players. To ensure that players 
 
 ## 使用方法 HOW TO USE
 
+### 下载程序 Dowload
+请前往[Releases](https://github.com/bili32414/LC_Backup/releases/tag/0.2)下载最新版
+  
+Please go to [Releases](https://github.com/bili32414/LC_Backup/releases/tag/0.2)Download the latest version.
+
 ### 配置要求 Configuration Requirements
 
 1. 最低Windows 10，推荐Windows 11
