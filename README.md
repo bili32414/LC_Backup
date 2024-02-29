@@ -22,7 +22,7 @@ Lethal Company is a popular strategy game among players. To ensure that players 
 
 1. 最低Windows 10，推荐Windows 11
 2. 推荐x64（x86和arm64还未测试）
-
+# 
 1. Minimum Windows 10, recommended Windows 11.
 2. Recommended x64 (x86 and arm64 have not been tested yet)
 ### 使用前准备 Preparation before use
@@ -30,7 +30,7 @@ Lethal Company is a popular strategy game among players. To ensure that players 
 1. 打开游戏存档备份器，程序会先自动获取用户名，或者在下面输入框中输入你的用户名，然后点击确认。
 2. 或者点击自动获取来获取用户名，如果怕误点就可以点击锁定用户名按钮（刚刚启动后需要点两下）。
 3. 等飞船起飞后保存游戏屏退出游戏。
-
+# 
 1. Open the game save backup device, and the program will automatically obtain the username, or enter your username in the input box below, and then click confirm.
 2. Alternatively, click on auto get to obtain the username. If you are afraid of errors, you can click on the lock username button (you need to click twice after just starting).
 3. Save the game screen and exit the game after the spacecraft takes off.
@@ -55,7 +55,7 @@ Select the archive "LCSaveFile (1, 2, or 3)" to be restored in the archive recov
 2. 请确保在备份和恢复过程中，游戏处于关闭状态。
 3. 备份位置位于程序目录下的backup文件夹内。
 4. 南锣子酱仅测试了Windows 11 x64，Windows 10及其他版本暂未测试.
-
+# 
 1. Before saving the game, you need to take off to save the progress. After the remaining days are displayed, you can save the progress. Then exit the game and run this software to backup/restore the save
 2. Please ensure that the game is turned off during the backup and recovery process.
 3. The backup location is located in the "backup" folder under the program directory
