@@ -62,7 +62,7 @@ Select the archive "LCSaveFile (1, 2, or 3)" to be restored in the archive recov
 4. I have only tested Windows 11 x64, and Windows 10 and other versions have not been tested yet
 ## 联系我 Contact Me
 
-如有任何问题或建议，欢迎通过以下方式联系我们：
+如有任何问题或建议，欢迎通过以下方式联系我们：  
 If you have any questions or suggestions, please feel free to contact us through the following methods:
 
 - 邮箱\(E-mail\)：[xzz378845506@126.com](mailto:xzz378845506@126.com)
