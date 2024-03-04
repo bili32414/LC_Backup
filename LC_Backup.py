@@ -7,9 +7,6 @@ root = Tk()
 root.title("LC备份器")
 root.resizable(False, False)
 
-check = 0
-check2 = 0
-
 lock_backup_status = 0
 user_name = os.getlogin()
 
@@ -63,6 +60,7 @@ def restore_save():
 
 def toggle_backup_lock():
     global lock_backup_status
+    print(lock_backup_status)
     if lock_backup_status == 0:
         lock_backup_status = 1
         lock_button.config(text="✔ 已锁定该备份")
@@ -79,7 +77,6 @@ def toggle_backup_lock():
         checkbutton3.config(state="normal")
 
 
-lock_backup_status = IntVar()
 lock_button = Button(root, text="锁定该版本备份", command=toggle_backup_lock)
 lock_button.grid(row=5, column=0, columnspan=2, padx=10, pady=10)
 
@@ -88,16 +85,18 @@ def get_username():
     global user_name
     global temp
     temp = user_name
-    # user_name = user_entry.get()
+    print("[debug]:临时存储名为" + temp)
+    user_name = user_entry.get()
+    print("[debug]:当前输入的用户为：" + user_name)
     if user_name == "" or user_name == " ":
         messagebox.showerror("错误", "用户名不能为空或者空格！")
 
-    elif user_name == "关于":
+    elif user_name == "关于" or "about":
         show_about_info()
         user_name = temp
     else:
-        messagebox.showinfo("提示", f"用户名已设置为 {user_name}")
         user_name = user_entry.get()
+        messagebox.showinfo("提示", f"用户名已设置为 {user_name}")
         user_entry_label.config(text=f"当前用户为 {user_name}")
 
 def show_about_info():
@@ -123,16 +122,16 @@ def lock_username():
     global lock_backup_status
     if lock_backup_status == 0:
         lock_backup_status = 1
-        user_entry_button.config(state="disabled")
-        user_entry_button_auto.config(state="disabled")
-    else:
-        lock_backup_status = 0
         user_entry_button.config(state="normal")
         user_entry_button_auto.config(state="normal")
+    else:
+        lock_backup_status = 0
+        user_entry_button.config(state="disabled")
+        user_entry_button_auto.config(state="disabled")
 
 
 Label(root, text="备份存档").grid(row=0, column=0, padx=10, pady=10)
-var1 = IntVar()
+var1 = IntVar(value=1)
 checkbutton1 = Checkbutton(root, text="LCSaveFile1", variable=var1)
 checkbutton1.grid(row=1, column=0, padx=10, pady=5)
 var2 = IntVar()
@@ -145,7 +144,7 @@ backup_button = Button(root, text="备份", command=backup_save)
 backup_button.grid(row=4, column=0, padx=10, pady=10)
 
 Label(root, text="还原存档").grid(row=0, column=1, padx=10, pady=10)
-var4 = IntVar()
+var4 = IntVar(value=1)
 Checkbutton(root, text="LCSaveFile1", variable=var4).grid(row=1, column=1, padx=10, pady=5)
 var5 = IntVar()
 Checkbutton(root, text="LCSaveFile2", variable=var5).grid(row=2, column=1, padx=10, pady=5)
