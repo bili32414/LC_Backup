@@ -100,7 +100,7 @@ def get_username():
         user_entry_label.config(text=f"当前用户为 {user_name}")
 
 def show_about_info():
-    result = messagebox.askquestion("关于", "2024 @南锣子酱 \n版权所有\nVer: Beta 0.2\n点击是进入作者网站")
+    result = messagebox.askquestion("关于", "2024 @南锣子酱 \n版权所有\nVer: Beta 0.3\n点击是进入作者网站")
     if result == 'no':
         pass  # 确定按钮被点击
     else:
